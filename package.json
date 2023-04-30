@@ -1,4 +1,19 @@
 {
+  "name": "tech_blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node Develop/server.js",
+    "seed": "node seeds/seed.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BrainAtoms/Tech_Blog"
+  },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.0",
     "connect-session-sequelize": "^7.1.6",
