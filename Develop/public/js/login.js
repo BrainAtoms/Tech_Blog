@@ -15,14 +15,15 @@ const loginFormHandler = async (event) => {
   
       if (response.ok) {
         // If successful, redirect the browser to the profile page
-        document.location.replace('/profile');
+        document.location.replace('/');
       } else {
         alert(response.statusText);
       }
     }
   };
   
-  const signupFormHandler = async (event) => {
+const signupFormHandler = async (event) => {
+    console.log('signup form handler')
     event.preventDefault();
   
     const name = document.querySelector('#name-signup').value.trim();
@@ -37,7 +38,7 @@ const loginFormHandler = async (event) => {
       });
   
       if (response.ok) {
-        document.location.replace('/profile');
+        document.location.replace('/');
       } else {
         alert(response.statusText);
       }

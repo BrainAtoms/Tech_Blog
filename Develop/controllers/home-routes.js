@@ -2,14 +2,17 @@ const router = require("express").Router();
 const { Post, Comment, User } = require("../models/");
 
 router.get("/", async (req, res) => {
+  console.log('rendering home loggedIn?')
+  console.log(req.session.loggedIn)
   try {
-    const postData = await Post.findall({
-      include: [User],
+    // const postData = await Post.findall({
+    //   include: [User],
+    // });
+
+    // const posts = postData.map((post) => post.get({ plain: true }));
+    res.render("homepage", {
+      loggedIn: req.session.loggedIn,
     });
-
-    const posts = postData.map((post) => post.get({ plain: true }));
-
-    res.render("all-posts", { posts });
   } catch (err) {
     res.status(500).json(err);
   }

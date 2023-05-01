@@ -1,0 +1,19 @@
+      {{#if loggedIn}}
+    <h1>Home</h1>
+    <form class="form post-form">
+      <div class="form-group">
+        <label for="post-title">Title:</label>
+        <input class="form-input" type="text" id="post-title" />
+      </div>
+      <div class="form-group">
+        <label for="post">Post:</label>
+        <textarea class="form-input" type="post" id="post"></textarea>
+      </div>
+      <div class="form-group">
+        <button class="btn btn-primary" type="submit">Submit Post</button>
+      </div>
+    </form>
+    <button id="logout">Logout</button>
+    {{else}}
+<a href="/login">You must login first submit post!</a>
+{{/if}}
