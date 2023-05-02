@@ -19,7 +19,11 @@ const newFormHandler = async (event) => {
         alert('Failed to create post');
       }
     }
-  };
+};
+  
+const editButtonHandler = async (event) => {
+  document.location.replace('/edit')
+};
   
   const delButtonHandler = async (event) => {
     if (event.target.hasAttribute('data-id')) {
@@ -40,6 +44,10 @@ const newFormHandler = async (event) => {
   document
     .querySelector('.new-post-form')
     .addEventListener('submit', newFormHandler);
+
+    document
+    .querySelector('.edit-post')
+    .addEventListener('click', editButtonHandler);
   
   document
     .querySelector('.post-list')

@@ -1,15 +1,15 @@
 [
     {
-      "name": "Music Near Me",
-      "description": "A mobile app that will send you notifications whenever a concert is playing in your area."
+      "name": "Coding Is Hard",
+      "description": "I wish that coding was easy."
     },
     {
-      "name": "The Ultimate Tech Quiz",
-      "description": "A web app that will give users 10 new technical questions each day and track their progress in things like programming, cybersecurity, database architecture, and more!"
+      "name": "Back End Or Front End?",
+      "description": "I think I like front end more!"
     },
     {
-      "name": "Roll 'Em Up",
-      "description": "A game for Windows and macOS where players move a ball through a series of increasingly challenging mazes."
+      "name": "It's Good To Take Breaks",
+      "description": "You will code better after you go on a walk."
     }
   ]
   
