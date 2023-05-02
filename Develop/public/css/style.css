@@ -1,3 +1,9 @@
+body {
+  justify-content: center;
+  background-color: palegoldenrod;
+  font-family: 'sans-serif'; 
+}
+
 header, .post:not(:last-child) {
     border-bottom: 1px solid #ccc;
   }
