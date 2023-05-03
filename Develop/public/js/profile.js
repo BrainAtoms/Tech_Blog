@@ -21,7 +21,7 @@ const newFormHandler = async (event) => {
     }
 };
   
-const editButtonHandler = async (event) => {
+const editButtonHandler = (event) => {
   document.location.replace('/edit')
 };
   

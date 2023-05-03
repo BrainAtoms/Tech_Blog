@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Post, User } = require('../models');
+const { Post, User, Comment } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
@@ -67,6 +67,28 @@ router.get('/post/:id', async (req, res) => {
     res.status(500).json(err);
   }
 });
+
+// router.get('/post/:id/comment', async (req, res) => {
+//   try {
+//     const commentData = await Comment.findByPk(req.params.id, {
+//       include: [
+//         {
+//           model: User,
+//           attributes: ['name'],
+//         },
+//       ],
+//     });
+
+//     const comment = commentData.get({ plain: true });
+
+//     res.render('post', {
+//       ...comment,
+//       logged_in: req.session.logged_in
+//     });
+//   } catch (err) {
+//     res.status(500).json(err);
+//   }
+// });
 
 // Use withAuth middleware to prevent access to route
 router.get('/profile', withAuth, async (req, res) => {

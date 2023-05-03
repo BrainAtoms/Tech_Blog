@@ -2,14 +2,14 @@
   <h2>{{name}}</h2>
   <p>{{description}}</p>
   <p>Created by {{user.name}} on {{format_date date_created}}</p>
-       <form class="form new-post-form">
+       {{!-- <form class="form new-comment-form">
       <div class="form-group">
-        <label for="post-name">Comment Title:</label>
-        <input class="form-input" type="text" id="post-name" name="post-name" />
+        <label for="comment-name">Comment Title:</label>
+        <input class="form-input" type="text" id="comment-name" name="comment-name" />
       </div>
       <div class="form-group">
-        <label for="post-desc">Comment:</label>
-        <textarea class="form-input" id="post-desc" name="post-desc"></textarea>
+        <label for="comment-desc">Comment:</label>
+        <textarea class="form-input" id="comment-desc" name="comment-desc"></textarea>
       </div>
       <div class="form-group">
         <button type="submit" class="btn btn-primary">Create Comment</button>
@@ -17,21 +17,19 @@
     </form>
   </div>
 
-     {{#if posts.length}}
+     {{#if comments.length}}
     <div class="col-md-6 post-list">
       <h3>Current Comments:</h3>
 
-      {{#each posts as |posts|}}
+      {{#each comments as |comments|}}
         <div class="row mb-2">
           <div class="col-md-8">
-            <h4>{{posts.name}}</h4>
+            <h4>{{comments.name}}</h4>
+            <h4>{{comments.description}}</h4>
           </div>
+          <p>Created by {{user.name}} on {{format_date date_created}}</p>
           <div class="col-md-4">
           <div class="col-md-4">
-            <button
-              class="btn btn-sm btn-danger"
-              data-id="{{posts.id}}"
-            >DELETE</button>
           </div>
         </div>
       {{/each}}
@@ -39,5 +37,5 @@
   {{/if}}
 </div>
 
-<script src="./js/profile.js"></script>
+<script src="/js/posts.js"></script> --}}
 
