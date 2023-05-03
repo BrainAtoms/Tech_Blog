@@ -15,7 +15,7 @@ The Tech_Blog webpage is a blog site specifically meant for those who are in the
 ## Installation 
 no installation necessary 
 ## Usage 
-Users must sign up first in order to log into the webpsite. Once they have officially logged in they will be able to create a blog post by typing a post title and then their blogpost and submitting. The blogpost will then be submitted under their profile. They will then have the option to edit or delete their blogpost. Other users may also comment on their blogpost if they have also logged in. 
+Users must sign up first in order to log into the webpsite. Once they have officially logged in they will be able to create a blog post by typing a post title and then their blogpost and submitting. The blogpost will then be submitted under their profile. They will then have the option to edit or delete their blogpost. 
 ## License 
 None 
 Get information about this license at https://mit-license.org/ 
