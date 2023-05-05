@@ -8,10 +8,6 @@
     "start": "node server.js",
     "seed": "node seeds/seed.js"
   },
-  "engines": {
-    "node": "v16.14.2",
-    "npm": "8.5.0"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
