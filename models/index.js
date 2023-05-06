@@ -8,7 +8,7 @@ Comment.belongsTo(User, {
 })
 
 Comment.belongsTo(Post, {
-  foreignKey: "post_id",
+  foreignKey: "comment_id",
   onDelete: "CASCADE"
 })
 

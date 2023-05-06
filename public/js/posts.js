@@ -6,7 +6,7 @@ const newCommentHandler = async (event) => {
   
   if (name && description) {
       // need to get the post id and pass it in the request
-      const response = await fetch(`/api/posts/3/comments`, {
+      const response = await fetch(`/api/posts`, {
         method: 'POST',
         body: JSON.stringify({ name, description }),
         headers: {
